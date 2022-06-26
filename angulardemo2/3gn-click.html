@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/Script3.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body ng-app="myMod">
+    <div ng-controller="mytech">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
+                    <th>Likes/Dislikes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="t in tech">
+                   <td>{{t.name}}</td>
+                    <td>{{t.likes}}</td>
+                    <td>{{t.Dislikes}}</td>
+                    <td>
+                        <input type="button" value="Like" ng-click="incrementLikes(t)">
+                        <input type="button" value="DisLike" ng-click="incrementDislikes(t)" >
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

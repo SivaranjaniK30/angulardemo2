@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/Script5.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myemployee">
+        Order By:
+        <select ng-model="sortColumn">
+            <option value="name">Name ASC</option>
+            <option value="gender">gender ASC</option>
+            <option value="Date Of Birth">Date Of Birth ASC</option>
+            <option value="Salary">Salary ASC</option>
+        </select>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Date Of Birth</td>
+                    <td>Gender</td>
+                    <td>Salary</td>
+                    <td> Current Salary</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="empolyees in e | orderBy:sortColumn">
+                    <td>{{ empolyees.name |uppercase }}</td>
+                    <td>{{ empolyees.dateOfBirth |date:"dd:mm:yyyy" }}</td>
+                    <td>{{ empolyees.gender |lowercase }}</td>
+                    <td>{{ empolyees.Salary |number:2 }}</td>
+                    <td>{{ empolyees.Salary |currency }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

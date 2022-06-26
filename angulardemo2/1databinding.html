@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head >
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/Script1.js"></script>
+</head>
+<body ng-app="myMod">
+
+    <!--    <div ng-controller="myemp">
+            <div>
+                 First Name: {{ emp.firstname }}
+            </div>
+            <div>
+                Last name:{{emp.lastname}}
+            </div>
+            <div>
+                Gender:{{emp.gender}}
+            </div>
+        </div>
+        -->
+    <div ng-controller="myemp">
+
+        <div>
+            <input type="text" ng-model="emp.firstname" />
+        </div>
+        <div>
+            <input type="text" ng-model="emp.lastname" />
+        </div>
+        <div>
+            <input type="text" ng-model="emp.gender" />
+        </div>
+
+        <div>
+            First Name: {{ emp.firstname }}
+        </div>
+        <div>
+            Last name: {{emp.lastname}}
+        </div>
+        <div>
+            Gender:{{emp.gender}}
+        </div>
+        <div>
+            Pic:
+           <img src="Images/IndiaFlag.png" style="height:200px;width:200px" />
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>
