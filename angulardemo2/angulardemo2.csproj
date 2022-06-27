@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="1databinding.html" />
+    <Content Include="1HtmlPage11.html" />
     <Content Include="5sortingInOpt.html" />
     <Content Include="4tableAndEvents.html" />
     <Content Include="3gn-click.html" />
@@ -77,7 +78,14 @@
     <Content Include="8employeeTable.html" />
     <Content Include="8ng-includeTableList.html" />
     <Content Include="9slidemove.html" />
+    <Content Include="10routingLayout.html" />
+    <Content Include="CountryService.asmx" />
     <Content Include="Images\IndiaFlag.png" />
+    <Content Include="Scripts\1Script10.js" />
+    <Content Include="Scripts\1Script12.js" />
+    <Content Include="Scripts\1Script11.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="6searchtext.html" />
     <Content Include="Scripts\Script1.js" />
@@ -90,12 +98,29 @@
     <Content Include="Scripts\Script7.js" />
     <Content Include="Scripts\Script8.js" />
     <Content Include="Scripts\Script9.js" />
+    <Content Include="StudentService.asmx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="StyleSheet2.css" />
+    <Content Include="StyleSheet3.css" />
+    <Content Include="StyleSheet4.css" />
+    <Content Include="Templates\courses.html" />
+    <Content Include="Templates\Home.html" />
+    <Content Include="Templates\students.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="City.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="CountryService.asmx.cs">
+      <DependentUpon>CountryService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="StudentService.asmx.cs">
+      <DependentUpon>StudentService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
